@@ -62,6 +62,12 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
+  font-family: 'La Belle Aurore', cursive;
+}
+h1.logo {
+  font-family: 'La Belle Aurore', cursive;
+  color: white
+  font-size: 50px;
 }
 mark {
   color: #000;
@@ -1339,7 +1345,7 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #337ab7;
+  color: #b30000;
 }
 a.text-primary:hover,
 a.text-primary:focus {
@@ -3118,27 +3124,31 @@ fieldset[disabled] .btn-default.focus {
   background-color: #333;
 }
 .btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  color: white;
+  background-color: #b30000;
+  border-color: #b30000;
+  text-color: white;
+  border-radius: 24px;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  color: white;
+  background-color: white;
+  border-color: #b30000;
+  text-color: #b30000;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: white;
+  border-color: white;
+  color: #b30000;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: white;
+  background-color: white;
+  border-color: #b30000;
+  text-color: #b30000;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3149,14 +3159,18 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  color: white;
+  background-color: white;
+  border-color: #b30000;
+  text-color: #b30000;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-image: none;
+  color: white;
+  background-color: white;
+  border-color: #b30000;
+  text-color: #b30000;
 }
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
@@ -3167,12 +3181,16 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  color: white;
+  background-color: white;
+  border-color: #b30000;
+  text-color: #b30000;
 }
 .btn-primary .badge {
-  color: #337ab7;
-  background-color: #fff;
+  color: white;
+  background-color: white;
+  border-color: #b30000;
+  text-color: #b30000;
 }
 .btn-success {
   color: #fff;
@@ -3440,7 +3458,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 24px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -4175,7 +4193,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    /*border-radius: 4px;*/
   }
 }
 @media (min-width: 768px) {
@@ -4962,13 +4980,19 @@ a.badge:focus {
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: inherit;
-  background-color: #eee;
+  /*background-color: #000000;*/
+  text-align: center;
+  background-image: url("instruments.jpg");
+  background-size: 25%;
+  /*background-repeat: no-repeat;*/
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 80px;
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -4997,10 +5021,10 @@ a.badge:focus {
     padding-right: 60px;
     padding-left: 60px;
   }
-  .jumbotron h1,
+  /*.jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
-  }
+    font-size: 20px;
+  }*/
 }
 .thumbnail {
   display: block;

@@ -66,7 +66,7 @@ h1 {
 }
 h1.logo {
   font-family: 'La Belle Aurore', cursive;
-  color: white
+  color: white;
   font-size: 50px;
 }
 mark {
@@ -1233,6 +1233,16 @@ h3,
   margin-top: 10px;
   margin-bottom: 10px;
 }
+h3.sublogo1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+h3.sublogo2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: gray;
+}
 h1 small,
 .h1 small,
 h2 small,
@@ -1277,6 +1287,10 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
+}
+.h2.introtext {
+  font-size: 30px;
+  font-family: 'La Belle Aurore', cursive;
 }
 h3,
 .h3 {
@@ -4977,6 +4991,12 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+.quickreference {
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -4986,6 +5006,18 @@ a.badge:focus {
   text-align: center;
   background-image: url("instruments.jpg");
   background-size: 25%;
+  /*background-repeat: no-repeat;*/
+}
+.jumbotron2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  /*color: inherit;*/
+  background-color: gray;
+  font-family: 'La Belle Aurore', cursive;
+  /*text-align: center;*/
+  /*background-image: url("instruments.jpg");*/
+  /*background-size: 25%;*/
   /*background-repeat: no-repeat;*/
 }
 .jumbotron h1,
@@ -5765,22 +5797,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: black;
 }
 .panel-info > .panel-heading {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: black;
+  background-color: black;
+  border-color: black;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #bce8f1;
+  border-top-color: black;
 }
 .panel-info > .panel-heading .badge {
-  color: #d9edf7;
-  background-color: #31708f;
+  color: black;
+  background-color: black;
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #bce8f1;
+  border-bottom-color: black;
 }
 .panel-warning {
   border-color: #faebcc;

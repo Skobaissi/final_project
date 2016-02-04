@@ -69,6 +69,11 @@ h1.logo {
   color: white;
   font-size: 50px;
 }
+h1.logoblack {
+  font-family: 'La Belle Aurore', cursive;
+  color: black;
+  font-size: 50px;
+}
 mark {
   color: #000;
   background: #ff0;
@@ -4997,6 +5002,18 @@ a.badge:focus {
   padding-left: 50px;
   padding-bottom: 50px;
 }
+.meetus1 {
+  text-align: left;
+  padding-right: 50px;
+  padding-left: 200px;
+  padding-bottom: 50px;
+}
+.meetus2 {
+  text-align: left;
+  padding-right: 200px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -5013,13 +5030,26 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 10px;
   /*color: inherit;*/
-  background-color: gray;
+  background-color: #e6e6e6;
   font-family: 'La Belle Aurore', cursive;
   /*text-align: center;*/
   /*background-image: url("instruments.jpg");*/
   /*background-size: 25%;*/
   /*background-repeat: no-repeat;*/
 }
+.jumbotron3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  /*color: inherit;*/
+  background-color: #e6e6e6;
+  font-family: 'La Belle Aurore', cursive;
+  text-align: center;
+  background-image: url("guitargen.jpg");
+  background-size: 30%;
+  /*background-repeat: no-repeat;*/
+}
+
 .jumbotron h1,
 .jumbotron .h1 {
   color: white;
@@ -5127,9 +5157,9 @@ a.thumbnail.active {
   color: #2b542c;
 }
 .alert-info {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: black;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
 }
 .alert-info hr {
   border-top-color: #a6e1ec;
@@ -5269,6 +5299,7 @@ a.thumbnail.active {
 }
 .media-object {
   display: block;
+  border-radius: 8px;
 }
 .media-object.img-thumbnail {
   max-width: none;
@@ -5296,6 +5327,7 @@ a.thumbnail.active {
 .media-heading {
   margin-top: 0;
   margin-bottom: 5px;
+  color: gray
 }
 .media-list {
   padding-left: 0;
@@ -5517,6 +5549,8 @@ button.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  background-color: black;
+  color: white;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5542,10 +5576,11 @@ button.list-group-item-danger.active:focus {
 }
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f5f5f5;
+  background-color: black;
+  color: white;
   border-top: 1px solid #ddd;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  /*border-bottom-right-radius: 3px;*/
+  /*border-bottom-left-radius: 3px;*/
 }
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
@@ -6814,8 +6849,11 @@ button.close {
     display: none !important;
   }
 }
-.profile{
+.profile {
   margin: 10px 0 10px;
   border-radius: 6px;
+  float: center
 }
+
+
 /*# sourceMappingURL=bootstrap.css.map */

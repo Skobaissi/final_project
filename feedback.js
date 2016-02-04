@@ -4,18 +4,17 @@ $(document).ready(function() {
 });
 
 function addItem() {
-  var text = $("#name").val()
+  var text = $(".feedback")
   var delete_link = 'a href ="#" class="link-delete">(Delete)</a>'
-  $("ol").append("<li>" + text + " " + delete_link + "<li>");
-  // $(.todo-list).html(text);
+  $(".addlist").append("<li>" + text + " " + delete_link + "<li>");
+  // $(".addlist").html(text);
   var numItems = $("li").length;
-}
 
   if (numItems ==1) {
-    $(".total").html(numItems + " item");
+    $(".total").html(numItems + " feedback item");
   }
   else {
-    $(".total").html(numItems + " items");
+    $(".total").html(numItems + " feedback items");
   }
 }
 function deleteItem(event) {

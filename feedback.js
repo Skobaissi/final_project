@@ -4,19 +4,19 @@ $(document).ready(function() {
 });
 
 function addItem() {
-  var text = $(".feedback")
-  var delete_link = 'a href ="#" class="link-delete">(Delete)</a>'
-  $(".addlist").append("<li>" + text + " " + delete_link + "<li>");
-  // $(".addlist").html(text);
-  var numItems = $("li").length;
+  var text = window.prompt("Enter feedback here");
+  // var x = document.getElementById("name");
+  // var text = $("name")
+  var delete_link = '<a href ="#" class="link-delete">(Delete)</a>'
+  // var i;
+  //   for (i = 0; i < x.length ;i++) {
+  //       text += x.elements[i].value + "<br>";
+  //   }
+  // document.getElementById("addlist").innerHTML = text
+  $("ol").append("<li>" + text + " " + delete_link + "</li>");
 
-  if (numItems ==1) {
-    $(".total").html(numItems + " feedback item");
-  }
-  else {
-    $(".total").html(numItems + " feedback items");
-  }
 }
+
 function deleteItem(event) {
   console.info(event);
   $(event.target).parent().fadeOut();

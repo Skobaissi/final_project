@@ -5328,6 +5328,7 @@ a.thumbnail.active {
   margin-top: 0;
   margin-bottom: 5px;
   color: gray
+  font-family: 'La Belle Aurore', cursive;
 }
 .media-list {
   padding-left: 0;

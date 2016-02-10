@@ -1,20 +1,20 @@
 $(document).ready(function() {
   $(".btn").on("click", addItem);
-  $("ol").on("click",".link-delete", deleteItem);
+  $("#myTable tbody").on("click",".link-delete", deleteItem);
 });
 
 function addItem() {
   var text = window.prompt("Enter feedback here");
-  // var x = document.getElementById("name");
-  // var text = $("name")
   var delete_link = '<a href ="#" class="link-delete">(Delete)</a>'
-  // var i;
-  //   for (i = 0; i < x.length ;i++) {
-  //       text += x.elements[i].value + "<br>";
-  //   }
-  // document.getElementById("addlist").innerHTML = text
-  $("ol").append("<li>" + text + " " + delete_link + "</li>");
+  $("#myTable tbody").append("<tr><td><li>" + text + " " + delete_link + "</td></tr></li>");
 
+  var numItems = $("li").length-4;
+    if (numItems == 1) {
+      $(".total").html(numItems + " item");
+    }
+    else {
+      $(".total").html(numItems + " items");
+    }
 }
 
 function deleteItem(event) {
